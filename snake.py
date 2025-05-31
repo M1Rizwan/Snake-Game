@@ -1,3 +1,5 @@
+# This file will generate the snake body & its methods for movement.
+
 import turtle as t
 POSITIONS = [(0, 0), (-20, 0), (-40, 0)]
 MOVE_DISTANCE = 20

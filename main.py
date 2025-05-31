@@ -1,9 +1,12 @@
+# This is the main file where main logic for the game will be executed.Other supporting files imported here.
+
 import time
 from turtle import Screen
 from snake import Snake
 from food import Food
 from scoreboard import Score
 
+# Create a screen object from turtle Screen Class to dislay the screen.
 screen = Screen()
 screen.setup(width=600, height=600)
 screen.bgcolor("pink")
@@ -13,11 +16,13 @@ snake = Snake()
 food = Food()
 score = Score()
 
+# Listen() will recieve input from keyboard & calls respective method.
 screen.listen()
 screen.onkey(snake.up, "Up")
 screen.onkey(snake.down, "Down")
 screen.onkey(snake.right, "Right")
 screen.onkey(snake.left, "Left")
+
 
 game_on = True
 while game_on:
@@ -36,4 +41,5 @@ while game_on:
             game_on = False
             score.game_over()
 
+# Closes the screen on click if the game is over.
 screen.exitonclick()

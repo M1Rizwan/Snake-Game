@@ -1,6 +1,7 @@
+# This file will generate a random blinking dot(or snake food). Created a 'Food' child class from Turtle.
+
 from turtle import Turtle
 import random
-
 
 class Food(Turtle):
     def __init__(self):

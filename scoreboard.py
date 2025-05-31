@@ -1,5 +1,6 @@
-from turtle import Turtle
+# In this file created the child class 'Score' to update the score. 
 
+from turtle import Turtle
 
 class Score(Turtle):
     def __init__(self):
